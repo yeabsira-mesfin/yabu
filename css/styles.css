@@ -240,5 +240,85 @@ input::placeholder{
     }
     
 }
+/* Cards */
+.card {
+   margin-left: 10rem;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+    height: 38rem;
+    width: 30rem;
+}
+.card__body{
+    margin-top: rem;
+}
 
+.card__foot{
+    
+   display: flex;
+   margin-top: 4rem;
+   justify-content: center; 
+}
+.headd{
+    height: 13rem;
+    width: 30rem;
+    background: var(--color-primary);
+   position: relative;
+}
+.imgg{
+    position: absolute;
+    width: 40px;
+    top: -6px;
+    right: 5%;
+}
+.card__header{
+    color: white;
+    margin-left: 2rem;
+}
+.hed{
+    color: white;
+    margin-top: 2rem;
+}
 
+p{
+   font-size: 1.5rem;
+    display: inline-block;
+    color: white;
+    margin-bottom: 1px;
+}
+.h{
+    display: inline-block;
+    color: white;
+    font-size: 2.5rem; 
+    margin-bottom: 1px; 
+    margin-left: 2rem;
+}
+
+.hh{
+    display: inline-block;
+    color: white;
+    margin-top: 1px;
+    margin-left: 2rem;
+}
+.cardd{
+    display: inline-block;
+    font-size: 1.5rem;
+    background: darkblue;
+    height: 2rem;
+    
+    border-radius: 20px;
+}
+.lis{
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+    font-size: 1.5rem;
+}
+.butt{
+    width: 15rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: var(--color-headings);
+    color: white;
+    height: 4rem;
+}
