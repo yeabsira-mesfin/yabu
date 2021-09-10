@@ -140,6 +140,7 @@ a {
 }
 .icon--primary{
     fill: var(--color-primary);
+    
 }
 .icon-container{
    background:#f3f9fa;
@@ -240,7 +241,7 @@ input::placeholder{
     }
     
 }
-/* Cards */
+/* Cards and Plans together since mosh had no source code */
 .card {
    margin-left: 10rem;
     border-radius: 7px;
@@ -279,13 +280,13 @@ input::placeholder{
     color: white;
     margin-top: 2rem;
 }
-
+/*
 p{
    font-size: 1.5rem;
     display: inline-block;
     color: white;
     margin-bottom: 1px;
-}
+}*/
 .h{
     display: inline-block;
     color: white;
@@ -321,4 +322,17 @@ p{
     background: var(--color-headings);
     color: white;
     height: 4rem;
+}
+/* Media */
+.media{
+    display: flex;
+}
+.media__title{
+    margin-top: 0px;
+}
+.media__body{
+    margin: 0 2rem;
+}
+.media__image{
+    margin: 1rem;
 }
