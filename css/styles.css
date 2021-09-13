@@ -139,9 +139,16 @@ a {
     height:40px;
     width: 40px;     
 }
+.icon--small{
+    height:30px ;
+    width: 30px;
+}
 .icon--primary{
     fill: var(--color-primary);
     
+}
+.icon--white{
+    fill: #fff;
 }
 .icon-container{
    background:#f3f9fa;
@@ -151,6 +158,9 @@ a {
    display: inline-flex;
    justify-content: center;
    align-items: center;
+}
+.icon-container--accent{
+    background: var(--color-accent);
 }
 /* Buttons */
 .btn{
@@ -369,12 +379,14 @@ p{
     bottom: 10px;
     margin-left: 5rem;
 }
+
 @media screen and (min-width:1024px){
    .quote{
        font-size: 2rem;
    }
    .quote__author{
        font-size: 2.4rem;
+       
    }
    .quote__organization{
        font-size: 1.6rem;
@@ -393,6 +405,52 @@ p{
 @media screen and (min-width:1024px) {
     .grid--cols-3{
         grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+/* Testimonials */
+.testimonial{
+    padding: 3rem;
+    width: 100%;
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image > img{
+    width: 100%;
+}
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right:-32px;
+}
+@media screen and (min-width:768px){
+    .testimonial .quote,.testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+    .testimonial .quote{
+        margin-left: 6rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .icon--small{
+        width: 20px;
+        height: 20px;
+    }
+    .icon-container--accent{
+        width: 40px;
+        height: 40px;
+    }
+    .testimonial__image{
+        position: relative;
+    }
+    .testimonial__image > img{
+        width: 100%;
+    }
+    .testimonial__image > .icon-container{
+        position: absolute;
+        top: 3rem;
+        right: -20px;
     }
     
 }
