@@ -177,6 +177,12 @@ a {
     text-transform: uppercase;
     white-space: nowrap;
 }
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right:  1rem; 
+    vertical-align: middle;
+}
 .btn--primary{
     background: var(--color-primary);
     color: white;
@@ -245,7 +251,7 @@ input::placeholder{
 .input-group .input{
     border: none;
     flex-grow: 1;
-    padding:1.5rem 1rem;
+    padding:1.5rem 2rem;
 }
 .btn .btn--accent{
     height:100px;
@@ -523,6 +529,10 @@ p{
     opacity: 1;
 }
 /* Block */
+.block{
+    
+    justify-self: center;
+}
 
 .block--dark{
     background: #000;
@@ -531,6 +541,12 @@ p{
 .block .block__header{
    align-self: center;
    justify-self: center;
+   margin-left: 5rem;
+}
+@media screen and (min-width:760px) {
+    .block .block__header{
+        margin-left: 25rem;
+    }    
 }
 .block--dark .block__heading{
     color: #fff;
@@ -627,4 +643,27 @@ nav.collapsible--expanded .nav__toggler{
         text-align: left;
         align-self: center;
     }
+}
+/* Block Domain */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items:center ;
+    max-width: 700px;
+    margin: 0 auto;
+}
+@media screen and (min-width:768px) {
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    
 }
