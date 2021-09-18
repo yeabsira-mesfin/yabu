@@ -542,9 +542,8 @@ p{
     color: #7b858b;
 }
 .block .block__header{
-   align-self: center;
-   justify-self: center;
-   margin-left: 5rem;
+   margin-bottom: 4rem;
+   text-align: center;
 }
 @media screen and (min-width:760px) {
     .block .block__header{
@@ -672,7 +671,7 @@ nav.collapsible--expanded .nav__toggler{
 }
 /* Plans Block */
 .block-plans .grid{
-    gap: 8 4rem;
+    gap: 8rem 4rem;
 }
 .block-plans .card{
     transition: transform .2s ease-out;
@@ -713,4 +712,8 @@ nav.collapsible--expanded .nav__toggler{
         order: 2;
 
     }
+}
+/* Testimonial Block */
+.container{
+    gap: 4rem 4rem;
 }
