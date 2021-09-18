@@ -672,7 +672,7 @@ nav.collapsible--expanded .nav__toggler{
 }
 /* Plans Block */
 .block-plans .grid{
-    gap: 8rem 4rem;
+    gap: 8 4rem;
 }
 .block-plans .card{
     transition: transform .2s ease-out;
@@ -693,4 +693,24 @@ nav.collapsible--expanded .nav__toggler{
 }
 .block-plans  ,.card--secondary:hover{
     transform: scale(1.1);
+}
+/* Features */
+.feature{
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+.feature__heading{
+    margin: 1rem 0;
+}
+.feature__image{
+     width: 100%;
+}
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content{
+        order: 2;
+
+    }
 }
