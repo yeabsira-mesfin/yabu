@@ -304,13 +304,13 @@ input::placeholder{
     color: white;
     margin-top: 2rem;
 }
-/*
+
 p{
    font-size: 1.5rem;
     display: inline-block;
     color: white;
     margin-bottom: 1px;
-}*/
+}
 .h{
     display: inline-block;
     color: white;
@@ -341,11 +341,14 @@ p{
 .butt{
     width: 15rem;
     border-radius: 20px;
-    outline: none;
-    border: none;
-    background: var(--color-headings);
-    color: white;
+    outline: var(--color-headings);
+    border: solid var(--color-headings) 1px;
+    background: white;
+    color:var(--color-seondary);
     height: 4rem;
+}
+.butt:hover{
+    background: var(--color-headings);
 }
 /* Media */
 .media{
@@ -666,4 +669,28 @@ nav.collapsible--expanded .nav__toggler{
         grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
     }
     
+}
+/* Plans Block */
+.block-plans .grid{
+    gap: 8rem 4rem;
+}
+.block-plans .card{
+    transition: transform .2s ease-out;
+}
+.block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.block-plans .card--primary{
+    transform:scale(1.1);
+}
+.block-plans .card--primary:hover{
+    transform:scale(1.15);
+}
+
+.block-plans .grid{
+    margin: 5rem 0;
+}
+.block-plans  ,.card--secondary:hover{
+    transform: scale(1.1);
 }
