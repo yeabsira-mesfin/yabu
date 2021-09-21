@@ -275,7 +275,7 @@ input::placeholder{
     width: 30rem;
 }
 .card__body{
-    margin-top: rem;
+    margin-top: 0;
 }
 
 .card__foot{
@@ -552,6 +552,7 @@ p{
 }
 .block--skewed-right{
     padding-bottom: calc(var(--padding-vertical)+4rem);
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 95%);
 }
 .block--skewed-left{
     padding-bottom: calc(var(--padding-vertical)+4rem);
