@@ -173,7 +173,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     text-align: center;
-    padding:2rem 3rem;
+    padding:2rem 4vw;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -252,6 +252,7 @@ input::placeholder{
     border: none;
     flex-grow: 1;
     padding:1.5rem 2rem;
+    width: 0;
 }
 .btn .btn--accent{
     height:100px;
@@ -440,6 +441,7 @@ p{
     top: 3rem;
     right:-32px;
 }
+
 @media screen and (min-width:768px){
     .testimonial .quote,.testimonial .quote__author{
         font-size: 2.4rem;
@@ -449,6 +451,17 @@ p{
     }
 }
 @media screen and (max-width:650px) {
+    .scrl{
+        margin-right: 10rem;
+        margin-left: -13rem;
+    }
+    .si{
+        font-size: 1.5rem;
+    }
+    .quote__line{
+        display: none;
+    }
+
     .icon--small{
         width: 20px;
         height: 20px;
@@ -459,6 +472,7 @@ p{
     }
     .testimonial__image{
         position: relative;
+        width: 20rem;
     }
     .testimonial__image > img{
         width: 100%;
@@ -533,10 +547,7 @@ p{
     opacity: 1;
 }
 /* Block */
-.block{
-    height: auto;
-    
-}
+
 
 .block--dark{
     background: #000;
@@ -652,14 +663,18 @@ nav.collapsible--expanded .nav__toggler{
     max-width: 670px;
 }
 .block-domain__prices{
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows:repeat(2,6rem);
     font-size: 2rem;
     font-weight: 600;
     justify-items:center ;
     max-width: 700px;
     margin: 0 auto;
+}
+.para{
+    color: #000;
 }
 @media screen and (min-width:768px) {
     .block-domain__prices{

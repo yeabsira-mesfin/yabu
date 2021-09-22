@@ -21,7 +21,7 @@
 <body>
    <header>
     <nav class="nav collapsible">
-      <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
+      <a class="nav__brand" href="#foot"><img src="images/logo.svg" alt=""></a>
       <svg class="icon icon--white nav__toggler">
        <use xlink:href="images/sprite.svg#menu"></use></svg>
        <ul class="list nav__list collapsible__content">
@@ -44,30 +44,46 @@
  
       </div>
     </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
     <section class="block container block-domain">
-      <header class="block__header"  data-aos="fade-down">
-        <h2>Statrting at 9 per month</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, alias.</p>
-      </header>
-      <div class="input-group ">
-       
-        <input type="text"
-        class="input" 
-        placeholder="Enter domain name here...">
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
-          </svg>Search</button>
-      </div>
-      <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com $9</span></li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>
-      </ul>
-    </section>
+        <header class="block__header">
+          <h2>Statrting at 9 per month</h2>
+          <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, alias.</p>
+        </header>
+        <div class="input-group ">
+         
+          <input type="text"
+          class="input" 
+          placeholder="Enter domain name here...">
+          <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>Search</button>
+        </div>
+        <ul class="list block-domain__prices">
+          <li><span class="badge badge--secondary">.com $9</span></li>
+          <li>.sg $10</li>
+          <li>.space $11</li>
+          <li>.info $14</li>
+          <li>.net $10</li>
+          <li>.xyz $10</li>
+        </ul>
+      </section>
+</body>
+</html>
     <div class="block container block-plans">
       <div class="grid grid--cols-3">
         <div>
@@ -247,7 +263,7 @@
         </article>
    
     </section>
-    <section class="block">
+    <section class="block scrl">
       <header class="block__header">
         <h2>What our Customers are Saying?
         </h2>
@@ -269,7 +285,7 @@
           
           <footer>
            
-               <div>
+               <div class="si">
                  class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Quae possimus vitae asperiores deleniti facilis sapiente
                  accusantium sint distinctio fugit numquam?
@@ -292,7 +308,7 @@
             </div>
             </div>
     </section>
-    <footer class="block block--dark footer">
+    <footer class="block block--dark footer" id="foot">
       <div class="container grid footer__sections">
       
        <section class="collapsible collapsible--expanded footer__section">
