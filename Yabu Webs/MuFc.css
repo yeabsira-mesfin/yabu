@@ -1,17 +1,17 @@
-/*Navigation*/
+/* Navigation */
 .nav{
     width: auto;
     height: 5rem;
-    background: black;
+    background:yellow;
     display: flex;
     flex-direction: row;
-    color:white;
+    color:red;
     justify-content: center;
     align-items: center;
 }
 .nav--para{
     text-transform: uppercase;
-    padding-left: 0.rem;
+    padding-left: 0.2rem;
 }
 .image{
     padding-left:1rem ;
@@ -20,4 +20,76 @@
     width: 1.5rem;
     height: 2rem;
     border-radius: 20px;
+}
+/* Intro */
+.intro{
+    background: black;
+    height: 7rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    padding:2rem 2rem;
+    fill: yellow;
+}
+.icon:hover{
+    fill: yellowgreen;
+}
+
+.intro--icons .user{
+    color: yellow;
+}
+.user:hover{
+    color: yellowgreen;
+}
+.user .icon{
+    margin-left: 1rem;
+}
+ .intro--header .header{
+   
+    text-transform: uppercase;
+}
+/* Collapsible */
+.collapsible{
+    border-bottom: 2px solid greenyellow;
+}
+.collapsible--expanded{
+    position: relative;
+}
+.collapsible__content{
+    background: black;
+    max-height: 0;
+    
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(15deg);
+}
+.collapsible--expanded .collapsible__content{
+    margin-left: 2rem;
+    max-height: 35vh;
+    max-width: 20rem;
+    opacity: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+    display:block;
+}
+
+.link{
+    display: block;
+    color: white;
+
 }
