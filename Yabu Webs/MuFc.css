@@ -1,3 +1,6 @@
+body{
+    height: 200vh;
+}
 /* Navigation */
 .nav{
     width: auto;
@@ -97,4 +100,19 @@
     margin-left: -2.2rem;
     border-bottom: 2px solid yellowgreen ;
 
+}
+/* Redirect */
+.redirect{
+    background: yellow;
+    height: 5rem;
+    display: flex;
+    flex-direction:row;
+    align-items: center; 
+    justify-content: center;  
+}
+.redirect--para{
+    width: 10rem;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
 }
