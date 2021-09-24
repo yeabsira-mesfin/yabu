@@ -117,10 +117,13 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
 }
-
+.mainn{
+    height: 62rem;
+    border-bottom: 2px solid yellow;
+}
 .main-image{
     width: 94rem;
-    height: 50rem;
+    height: 60rem;
     background: url(images/12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,8 +133,101 @@
 .bg-head{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: auto;
-    height: 94rem;
+    height: 50rem;
 }
+/* Grid */
+
+.gallery{
+    width: 96rem;
+    height: 14rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: o.2rem;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+.gallery-one{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+    
+}
+.one{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-one:hover{
+    transform: scale(1.1);
+}
+.gallery-two{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+}
+.gallery-two:hover{
+    transform: scale(1.1);
+}
+.two{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-three{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+}
+.gallery-three:hover{
+    transform: scale(1.1);
+}
+.three{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-four{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+}
+.gallery-four:hover{
+    transform: scale(1.1);
+}
+.four{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-five{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+}
+.gallery-five:hover{
+    transform: scale(1.1);
+}
+.five{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-six{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+}
+.gallery-six:hover{
+    transform: scale(1.1);
+}
+.six{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+
+
