@@ -1,11 +1,9 @@
-body{
-    height: 200vh;
-}
+
 /* Navigation */
 .nav{
     width: auto;
     height: 5rem;
-    background:yellow;
+    background:black;
     display: flex;
     flex-direction: row;
     color:red;
@@ -17,7 +15,10 @@ body{
     padding-left: 0.2rem;
 }
 .image{
+    width: 10rem;
     padding-left:1rem ;
+    display: flex;
+    justify-content: space-evenly;
 }
 .img{
     width: 1.5rem;
@@ -77,13 +78,13 @@ body{
     transform: rotate(15deg);
 }
 .collapsible--expanded .collapsible__content{
-    margin-left: 2rem;
+    
     max-height: 35vh;
-    max-width: 20rem;
+    max-width: 100rem;
     opacity: 1;
     overflow: scroll;
     overflow-x: hidden;
-    position: fixed;
+    
 }
 .list{
     list-style: none;
@@ -115,4 +116,22 @@ body{
     color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
+}
+
+.main-image{
+    width: 94rem;
+    height: 50rem;
+    background: url(images/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+    color:rgb(153, 26, 24);
+}
+.bg-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 94rem;
 }
