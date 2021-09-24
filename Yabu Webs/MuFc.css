@@ -91,5 +91,10 @@
 .link{
     display: block;
     color: white;
+    margin-top: 6px;
+    height: 2rem;
+    width: auto;
+    margin-left: -2.2rem;
+    border-bottom: 2px solid yellowgreen ;
 
 }
