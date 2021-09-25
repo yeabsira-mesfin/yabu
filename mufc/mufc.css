@@ -229,5 +229,47 @@
     width: 14rem;
     border-radius: 20px;
 }
-
+.gallery-vid{
+    width: 96rem;
+    height: 14rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: o.2rem;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+.gallery-vid1{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+    
+}
+.video1{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-vid2{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+    
+}
+.video2{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
+.gallery-vid3{
+    height: 10rem;
+    width: 14rem;
+    transition: transform 2s;
+    
+}
+.video3{
+    height: 10rem;
+    width: 14rem;
+    border-radius: 20px;
+}
 
