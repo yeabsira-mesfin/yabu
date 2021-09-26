@@ -1,3 +1,7 @@
+body{
+    background: black;
+    color: white;
+}
 p{
     margin: 0;
 }
@@ -132,6 +136,7 @@ p{
     clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0 0);
     color:rgb(153, 26, 24);
 }
+/* Background */
 .bg-head{
     display: flex;
     flex-direction: column;
@@ -526,3 +531,16 @@ p{
     width: 10rem;
     border-radius: 2px;
 }
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer p{
+    padding: 0 1rem;
+}
+.footer p:hover{
+    color: gray;
+    cursor: pointer;
+}
+
