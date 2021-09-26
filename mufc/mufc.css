@@ -317,6 +317,7 @@ p{
     width: 18rem;
     border-radius: 20px;
 }
+/* Share Container */
 .share{
     width: 96rem;
     height: 20rem;
@@ -381,5 +382,94 @@ p{
 .share__button:hover{
     background: black;
     color: red;
-   
+}
+/* Subscribe Container */
+.subscribe-container{
+    width: 96rem;
+    height: 20rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: o.2rem;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+.subscribe__one{
+    height: 15rem;
+    width: 48rem;
+    border-right: 2px solid yellow;
+    transition: filter 2s;
+    transition: transform  2s;
+}
+.sub--button{
+    display: block;
+    margin-top: 2rem;
+     height: 2rem;
+     margin-left: 15rem;
+     width: 19rem;
+}
+.sub-span{
+    margin-top:1rem;
+}
+.subscribe__two{
+    height: 15rem;
+    width: 48rem;
+    border-right: 2px solid yellow;
+}
+.sub-image{
+    height: 15rem;
+    width: 48rem;
+    transition: filter 2s;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  
+}
+
+.s--one{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+.s--two{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+.s--three{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+.s--four{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+.s--five{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+
+.s--six{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+
+.s--seven{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
+}
+
+.s--eight{
+    height: 5rem;
+    width:5rem;
+    border-radius: 20px;
 }
