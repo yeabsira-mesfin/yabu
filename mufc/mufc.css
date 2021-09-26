@@ -317,3 +317,69 @@ p{
     width: 18rem;
     border-radius: 20px;
 }
+.share{
+    width: 96rem;
+    height: 20rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: o.2rem;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+.share-one{
+    height: 15rem;
+    width: 24rem;
+   
+    transition: filter 2s;
+    
+    transition: transform  2s;
+}
+.s-one{
+    height: 15rem;
+    width: 18rem;
+    border-radius: 20px;
+}
+.share-two{
+    height: 15rem;
+    width: 24rem;
+    align-items: center;
+    justify-items: center;
+}
+.s-two{
+   
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20px;
+}
+.share-three{
+    height: 15rem;
+    width: 24rem;
+   
+    transition: filter 2s;
+    
+    transition: transform  2s;
+}
+.s-three{
+    height: 15rem;
+    width: 18rem;
+    border-radius: 20px;
+}
+.share-four{
+    margin-top:4.5rem;
+    height: 15rem;
+    width: 24rem;
+}
+.s-four{
+    
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20px;
+}
+.share__button:hover{
+    background: black;
+    color: red;
+   
+}
