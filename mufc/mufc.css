@@ -473,3 +473,56 @@ p{
     width:5rem;
     border-radius: 20px;
 }
+/*Footer*/
+.foot{
+    width: 96rem;
+    height: 20rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: o.2rem;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+.foot p{
+    padding: 0.4rem;
+}
+.foot-one{
+    height: 15rem;
+    width: 16rem;
+}
+.foot-two{
+    height: 15rem;
+    width: 16rem;
+    text-align: left;
+}
+.foot-three{
+    height: 15rem;
+    width: 16rem;
+}
+.foot-four{
+    height: 15rem;
+    width: 16rem;
+    text-align: left;
+}
+.foot-five{
+    height: 15rem;
+    width: 16rem;
+}
+.foot-six{
+    height: 15rem;
+    width: 16rem;
+    text-align: left;
+}
+.f-one{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 2px;
+}
+.f-two{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 2px;
+}
