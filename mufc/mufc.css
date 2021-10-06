@@ -1,6 +1,7 @@
 body{
     background: black;
     color: white;
+
 }
 p{
     margin: 0;
@@ -33,6 +34,7 @@ p{
 }
 /* Intro */
 .intro{
+    
     background: black;
     height: 7rem;
     color: white;
@@ -67,6 +69,7 @@ p{
 }
 /* Collapsible */
 .collapsible{
+    width: 100%;
     border-bottom: 2px solid greenyellow;
 }
 .collapsible--expanded{
@@ -86,7 +89,7 @@ p{
 .collapsible--expanded .collapsible__content{
     
     max-height: 35vh;
-    max-width: 100rem;
+    max-width: 100%;
     opacity: 1;
     overflow: scroll;
     overflow-x: hidden;
@@ -104,38 +107,57 @@ p{
     margin-top: 6px;
     height: 2rem;
     width: auto;
-    margin-left: -2.2rem;
     border-bottom: 2px solid yellowgreen ;
 
 }
 /* Redirect */
 .redirect{
+    width: 100%;
     background: yellow;
     height: 5rem;
     display: flex;
     flex-direction:row;
     align-items: center; 
     justify-content: center;  
+    margin-top: 1rem;
 }
 .redirect--para{
+    
     width: 10rem;
     color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
+}
+@media screen and (max-width:520px){
+    
+    .redirect--para{
+        width: 5rem;
+        color: red;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+    .redirect{
+    
+        display: flex;
+        flex-direction:row;
+        align-items: center; 
+        justify-content: space-around;  
+    }
+
 }
 .mainn{
     height: 62rem;
     border-bottom: 2px solid yellow;
 }
 .main-image{
-    width: 94rem;
+    width: 100%;
     height: 60rem;
     background: url(images/12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0 0);
     color:rgb(153, 26, 24);
 }
+
 /* Background */
 .bg-head{
     display: flex;
@@ -148,7 +170,7 @@ p{
 /* Grid */
 
 .gallery{
-    width: 96rem;
+    width: 100%;
     height: 14rem;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -157,11 +179,42 @@ p{
     border-bottom: 2px solid yellow;
     cursor: pointer;
 }
+@media screen and (max-width:520px) {
+    .gallery{
+        height:64rem ;
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem;
+        row-gap: o.5rem;
+        text-align: center;
+        
+        border-bottom: 2px solid yellow;
+        cursor: pointer;
+    }
+    .gallery-one{
+        margin-left: 8rem;
+    }
+    .gallery-two{
+        margin-left: 8rem;
+    }
+    .gallery-three{
+        margin-left: 8rem;
+    }
+    .gallery-four{
+        margin-left: 8rem;
+    }
+    .gallery-five{
+        margin-left: 8rem;
+    }
+    .gallery-six{
+        margin-left: 8rem;
+    }
+   
+}
 .gallery-one{
     height: 10rem;
     width: 14rem;
     transition: transform 2s;
-    
 }
 .one{
     height: 10rem;
@@ -236,16 +289,21 @@ p{
     width: 14rem;
     border-radius: 20px;
 }
+/* Gallery Video */
 .gallery-vid{
-    width: 96rem;
+    width: 100%;
     height: 14rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: o.2rem;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     border-bottom: 2px solid yellow;
     cursor: pointer;
 }
+
+
 .gallery-vid1{
     height: 10rem;
     width: 14rem; 
@@ -254,6 +312,7 @@ p{
     height: 10rem;
     width: 14rem;
     border-radius: 20px;
+    margin-top: -1rem;
 }
 .gallery-vid2{
     height: 10rem;
@@ -264,6 +323,7 @@ p{
     height: 10rem;
     width: 14rem;
     border-radius: 20px;
+    margin-top: -1rem;
 }
 .gallery-vid3{
     height: 10rem;
@@ -273,10 +333,44 @@ p{
     height: 10rem;
     width: 14rem;
     border-radius: 20px;
+    margin-top: -1rem;
+}
+@media screen  and (max-width:520px){
+
+    .gallery-vid1{
+        width: 7rem; 
+       
+    }
+    .video1{
+        width: 7rem;
+        margin-bottom: -1rem;
+        margin-top: -3rem;
+        
+     
+    }
+    .gallery-vid2{
+        width: 7rem;
+    }
+    .video2{
+        width: 7rem;
+        margin-bottom: -1rem;
+    
+        margin-top: -3rem;
+        
+    }
+    .gallery-vid3{
+        width: 7rem;  
+    }
+    .video3{
+        width: 7rem;
+        margin-bottom: -1rem;
+        margin-top: -3rem;
+        
+    }
 }
 /* Gallery Container */
 .gallery-container{
-    width: 96rem;
+    width: 100%;
     height: 20rem;
     display: grid;
     justify-items: center;
@@ -285,10 +379,12 @@ p{
     text-align: center;
     border-bottom: 2px solid yellow;
     cursor: pointer;
+    margin-top: 2rem;
 }
+
 .gallery__one{
     height: 15rem;
-    width: 48rem;
+    width: 50rem;
     border-right: 2px solid yellow;
     transition: filter 2s;
     
@@ -308,7 +404,7 @@ p{
 
 .gallery__two{
     height: 15rem;
-    width: 48rem;
+    width: 50%;
     transform: filter 2s;
     transition: transform 2s;
 }
@@ -322,9 +418,33 @@ p{
     width: 18rem;
     border-radius: 20px;
 }
+@media screen and (max-width:520px) {
+    .gallery-container{
+        margin-top: 2rem;
+        width: 36%;
+        height: 15rem;
+    }
+    .gallery__one{
+        height: 13rem;
+        width:16rem;
+    }
+    .g-one{
+        height: 10rem;
+        width: 9rem;
+    }
+    
+    .gallery__two{
+        height: 13rem;
+        width:16rem;
+    }
+    .g-two{
+        height: 10rem;
+        width: 9rem;
+    }
+}
 /* Share Container */
 .share{
-    width: 96rem;
+    width: 100%;
     height: 20rem;
     display: grid;
     justify-items: center;
@@ -388,9 +508,51 @@ p{
     background: black;
     color: red;
 }
+@media screen and (max-width:520px) {
+    .share-one{
+    height: 7rem;
+    width: 9rem;
+}
+.s-one{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 20px;
+}
+.share-two{
+    height: 7rem;
+    width: 7rem;
+    align-items: center;
+    justify-items: center;
+}
+.s-two{
+
+    height: 5rem;
+    width: 3rem;
+}
+.share-three{
+    height: 7rem;
+    width: 9rem;
+}
+.s-three{
+    height: 7rem;
+    width: 7rem;
+}
+.share-four{
+    margin-top:-4.5rem;
+    margin-left: -1rem;
+    height: 7rem;
+    width: 9rem;
+}
+.s-four{
+    
+    height: 5rem;
+    width: 3rem;
+}
+    
+}
 /* Subscribe Container */
 .subscribe-container{
-    width: 96rem;
+    width: 100%;
     height: 20rem;
     display: grid;
     justify-items: center;
@@ -421,7 +583,7 @@ p{
 .subscribe__two{
     height: 15rem;
     width: 48rem;
-    border-right: 2px solid yellow;
+    
 }
 .sub-image{
     height: 15rem;
@@ -478,9 +640,42 @@ p{
     width:5rem;
     border-radius: 20px;
 }
+.subscribe-para{
+    display: inline-block;
+    text-align: center;
+}
+@media screen and (max-width:520px){
+    .subscribe-container{
+        height: 32rem;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 0;
+       
+    }
+ 
+    .sub--button{
+         height: 2rem;
+         margin-left: 30rem;
+         width: 19rem;
+    }
+    .subscribe__one{
+        height: 15rem;
+        width: 50rem;
+        border-right:0;
+    }
+    .subscribe-para{
+        display: inline-block;
+        text-align: justify;
+        margin-left: 30rem;
+    }
+    .subscribe__two{
+        height: 15rem;
+        width: 48rem;
+        margin-top: -6rem;
+    }
+}
 /*Footer*/
 .foot{
-    width: 96rem;
+    width: 100%;
     height: 20rem;
     display: grid;
     justify-items: center;
@@ -531,7 +726,39 @@ p{
     width: 10rem;
     border-radius: 2px;
 }
+@media screen and (max-width:520px) {
+    .foot{
+      
+        height: 40rem;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        column-gap: o.2rem;
+        text-align: center;
+        border-bottom: 2px solid yellow;
+        cursor: pointer;
+    }
+    .foot-two{
+    height: 15rem;
+    width: 10rem;
+    text-align: left;
+}
+    .foot-four{
+    height: 15rem;
+    width: 10rem;
+    text-align: left;
+}
+    .foot-six{
+    height: 15rem;
+    width: 10rem;
+    margin-top: -3rem;
+}
+}
+/* Footer for real */
 .footer{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -542,5 +769,10 @@ p{
 .footer p:hover{
     color: gray;
     cursor: pointer;
+}
+@media screen and (max-width:520px) {
+    .footer-para{
+        font-size: 0.5rem;
+    }
 }
 
